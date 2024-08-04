@@ -1,9 +1,9 @@
 <?php
 
-use App\Http\Controllers\VorratController;
+use App\Http\Controllers\StockController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/vorraete', [VorratController::class, 'index'])
+Route::get('/vorraete', [StockController::class, 'index'])
     ->middleware(['auth', 'verified'])
     ->name('vorraete');
 
