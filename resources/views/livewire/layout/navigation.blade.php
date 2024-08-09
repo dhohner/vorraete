@@ -29,8 +29,8 @@ $logout = function (Logout $logout) {
                     </x-nav-link>
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="route('vorraete')" :active="request()->routeIs('vorraete')" wire:navigate>
-                        {{ __('Vorräte') }}
+                    <x-nav-link :href="route('inventory')" :active="request()->routeIs('vorraete')" wire:navigate>
+                        {{ __('Inventory') }}
                     </x-nav-link>
                 </div>
             </div>
@@ -83,8 +83,8 @@ $logout = function (Logout $logout) {
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')" wire:navigate>
                 {{ __('Dashboard') }}
             </x-responsive-nav-link>
-            <x-responsive-nav-link :href="route('vorraete')" :active="request()->routeIs('vorraete')" wire:navigate>
-                {{ __('Vorräte') }}
+            <x-responsive-nav-link :href="route('inventory')" :active="request()->routeIs('vorraete')" wire:navigate>
+                {{ __('Inventory') }}
             </x-responsive-nav-link>
         </div>
 

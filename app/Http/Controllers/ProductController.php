@@ -4,10 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\View\View;
 
-class StockController extends Controller
+class ProductController extends Controller
 {
     public function index() : View
     {
-        return view('stock', []);
+        return view('product', []);
     }
 }

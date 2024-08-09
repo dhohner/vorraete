@@ -1,11 +1,11 @@
 <?php
 
-use App\Http\Controllers\StockController;
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/vorraete', [StockController::class, 'index'])
+Route::get('/vorraete', [ProductController::class, 'index'])
     ->middleware(['auth', 'verified'])
-    ->name('vorraete');
+    ->name('inventory');
 
 Route::view('/', 'welcome');
 
